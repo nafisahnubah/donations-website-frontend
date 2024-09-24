@@ -4,8 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header class="sticky top-0 z-10">    
+        <nav class="navbar bg-orange-50 h-28 lg:px-36 px-10 lg:pb-10 pb-3 bg-opacity-95">
+            <div class="navbar-start"> 
+                <a class="btn bg-lime-300 font-bold" href="./index.html">Home</a>
+            </div>
+            
+            <div class="flex gap-2">
+                <img src="./assets/logo.png" alt="Logo">
+                <h1 class="font-bold w-48">Donate Bangladesh</h1>
+            </div>
+
+            <div class="navbar-end flex gap-2">
+                <img src="./assets/coin.png" alt="Coin">
+                <h3 class="font-medium"><span id="balance">6000</span>BDT</h3>
+            </div>
+        </nav>
+
+        <div class="nav-buttons flex justify-center gap-3 py-12 bg-white bg-opacity-95">
+            <a class="btn bg-lime-300 font-bold" id="donation-btn">Donation</a>
+            <a class="btn bg-white font-bold" id="history-btn">History</a>
+        </div>
+    </header>
+
+    <main class="lg:px-36 px-10">
+        <h1 class="text-4xl">Important FAQs</h1>
+        <div class="collapse bg-base-200 my-10">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The DOM represents the structure of a webpage in terms of nodes, with attributes and contents that we can access and manipulate using JavaScript.</p>
+            </div>
+        </div>
+        <div class="collapse bg-base-200 my-10">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>We can use either getElementById() or querySelector() to select a single element from the DOM.</p>
+            </div>
+        </div>
+        <div class="collapse bg-base-200 my-10">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation uses the concept of event propagation to allow an event to be triggered by any of the child nodes of a single parent without having to add event listeners to each child element individually, but rather adding one event listener to the parent element.</p>
+            </div>
+        </div>
+        <div class="collapse bg-base-200 my-10">
+            <input type="checkbox" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>We can use getAttribute(), setAttribute(), and removeAttribute() to manipulate an element's attributes, and classList.add(), classList.remove() to manipulate its style by adding CSS classes to the element. </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="h-28 bg-orange-50"></footer>
 </body>
 </html>

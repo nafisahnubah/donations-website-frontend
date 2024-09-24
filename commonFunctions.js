@@ -27,7 +27,11 @@ function addHistory(donation, cause){
     h2.innerText = `${donation} Taka has been donated for the cause: ${cause}`;
     const p = document.createElement('p');
 
-    div2.appendChild(h2, p);
+    const date = new Date();
+    p.innerHTML = date;
+
+    div2.appendChild(h2);
+    div2.appendChild(p);
     div.appendChild(div2);
 
     document.getElementById('history-section').appendChild(div);
